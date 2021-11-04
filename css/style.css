@@ -215,9 +215,10 @@ a:hover {
   font-size: 1.7rem;
   border-radius: 50%;
   line-height: 1.4;
-  margin: 0 15px 0 0;
+  margin: 0 0 0 0;
   box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
+  padding-top: 10px;
 }
 
 .socials .ico-circle:hover {
@@ -732,6 +733,13 @@ a:hover {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
+  padding: .4rem 0;
+}
+
+.service-box .s-sec_title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
   padding: .4rem 0;
 }
 
@@ -1293,10 +1301,10 @@ footer .credits a {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background: transparent!important;
     margin: 10vh auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: none !important;
     width: 70%; /* Could be more or less, depending on screen size */
 }
 @media (min-width: 1366px) {
@@ -1333,6 +1341,8 @@ button.button1 {
   padding:3px;
   font-size:16px;
   border-radius: 5rem;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 
@@ -1362,4 +1372,7 @@ button.button1:hover {
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: RoyalBlue;
+}
+.logo {
+	align-self: center;
 }
