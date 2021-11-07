@@ -153,6 +153,19 @@ a:hover {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 500px) {
+	.title-a {
+	  font-size: 2rem;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	}
+	
+	.title-h1 {
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
+}
+
 .subtitle-a {
   color: #4e4e4e;
 }
