@@ -1389,3 +1389,9 @@ button.button1:hover {
 .logo {
 	align-self: center;
 }
+
+.divider {
+	width:5px;
+    height:auto;
+    display:inline-block;
+}
