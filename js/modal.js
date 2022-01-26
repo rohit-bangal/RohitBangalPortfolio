@@ -28,11 +28,22 @@ closeBtns.forEach(function(btn){
 window.onclick = function(event) {
   if (event.target.className === "modal") {
     event.target.style.display = "none";
-	var video = $("#vid_mah").attr("src");
+	var video;
+	if(event.target.id === "modal_quadru") {
+		video = $("#vid_quad").attr("src");
+//	video = video.replace("&autoplay=1", "");
+	$("#vid_quad").attr("src","");
+	$("#vid_quad").attr("src",video);
+//	$('#vid_mah').get(0).stopVideo();
+	} 
+	else {
+		video = $("#vid_mah").attr("src");
 //	video = video.replace("&autoplay=1", "");
 	$("#vid_mah").attr("src","");
 	$("#vid_mah").attr("src",video);
 //	$('#vid_mah').get(0).stopVideo();
+	}
+	
   }
 }
 
